@@ -1,0 +1,110 @@
+<section class="home" id="home">
+  <nav class="tnav">
+    <ul>
+      <li class="tnav-item">
+        <a class="nav-link" ng-click="gotoSection('home')">Home</a>
+      </li>
+      <li class="tnav-item">
+        <a class="nav-link" ng-click="gotoSection('work')">Work</a>
+      </li>
+      <li class="tnav-item">
+        <a class="nav-link" ng-click="gotoSection('blog')">Blog</a>
+      </li>
+      <li class="tnav-item">
+        <a class="nav-link" ng-click="gotoSection('about')">About</a>
+      </li>
+      <li class="tnav-item">
+        <a class="nav-link" ng-click="gotoSection('contact')">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="banner-title">
+      <img src="/img/text.png" target="_blank" />
+    </div>
+    <div class="banner-description">Creative Studio</div>
+  </div>
+
+</section>
+
+<section class="work" id="work">
+  <div class="container">
+    <h1 class="title">Works</h1>
+    <p class="description">We creates website template at the intersection of technology, design, culture, and brand stories. We help brands build loyalty, authenticity, and love.</p>
+
+    <ul class="row work-img">
+      <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4" ng-repeat="i in [1,2,3,4,5,6]">
+        <a href="#"><img ng-src="/img/{{ i }}.jpg" /></a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="blog" id="blog">
+  <img class="pattern" src="/img/pattern.png" />
+  <div class="container">
+    <h1 class="title">Blog</h1>
+    <p class="description">We creates website template at the intersection of technology, design, culture, and brand stories. We help brands build loyalty, authenticity, and love.</p>
+
+    <ul class="row blog-img">
+      <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4" ng-repeat="blog in home.blogs">
+        <a href="#"><img ng-src="{{blog.img}}" /></a>
+        <p class="category">{{blog.category}}</p>
+        <h2>{{blog.name}}</h2>
+        <p class="date">// Posted on Apirl 02, 2017</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <img class="pattern" src="/img/pattern.png" />
+  <div class="container">
+    <h1 class="title">About</h1>
+    <div class="box">
+      <h1>Want to work with us ?</h1>
+      <p>Welcome designer, web developer, marketing and saler join our team.</p>
+
+      <a class="apply-button" href="#">
+        Career &amp; Internship
+        <span data-icon="ei-arrow-right", data-size="s"></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="row box">
+      <div class="col-xs-12 col-ms-12 col-md-12 col-lg-4 office">
+        <h2 class="heading">Office</h2>
+        <p class="info">Isokatu 4A 8, 90300 Helsinki, Finland</p>
+        <a href="https://map.google.com" target="_blank">View on google map</a>
+      </div>
+
+      <div class="col-xs-12 col-ms-12 col-md-12 col-lg-4 brand">
+        <img class="pattern" src="/img/text.png" />
+        <p>Creative Studio</p>
+        
+        <div class="social-link">
+          <a href="https://github.com/hoakusa" target="_blank" data-icon="ei-sc-github" data-size="m">
+          <a href="https://linkedin.com/in/hoakusa" target="_blank" data-icon="ei-sc-linkedin" data-size="m">
+          <a href="https://twitter.com/hoakusa" target="_blank" data-icon="ei-sc-twitter" data-size="m">
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-ms-12 col-md-12 col-lg-4 contact-info">
+        <h2 class="heading">Contact</h2>
+        <p class="info">Have any question? Let’s talk about your issue. We’re here to help.</p>
+        <a class="email" href="">Email us hello@alphabetstudio.design</a>
+        <p class="phone">Call +358 40 001 3256</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<footer>
+  Copyright @ 2017 Alphabet Studio. Design by <a href="http://hoakusa.com" target="_blank">Alice Pham</a>
+</footer>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="app" lang="en" ng-controller="AppController as app" ng-strict-di>
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title ng-bind="app.App.getTitle()">Alphabet Creative Studio</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:700,800|Catamaran:200,300,500|Rock+Salt">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.css">  
+
+  <!-- meta description -->
+  <meta name="author" content="An Pham">
+  <meta name="robots" content="index,follow" />
+  
+  <meta name="description" content="Alphabet Creative Studio">
+  <meta name="contact" content="hoakusa@gmail.com">
+  <meta name="copyright" content="An Pham">
+
+</head>
+<body>
+
+  <ui-view></ui-view>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.js"></script>
+  <script type="text/javascript" src="/lib/mousewheel.js"></script>
+
+</body>
+</html>
