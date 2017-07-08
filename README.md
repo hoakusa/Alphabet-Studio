@@ -1,4 +1,4 @@
-# Over view
+# General
 
 [Visit site](http://alphabetstudio.hoakusa.com) or [Codepen](https://codepen.io/hoakusa/full/ZKRzZX/).
 
@@ -44,7 +44,7 @@ It will start a local server using `webpack-dev-server` which will watch, build 
 ### Create new page
 1. Add new component `new component` folder with `controller`, `view.html`, `route` and/or `service` (optional).
 2. Remember to import `new component` in `app.js`_app main controller.
-3. Add content to component output `view.html` and change its apperance.
+3. Add content to component output `view.html` and change its appearance.
 
 # License
 
