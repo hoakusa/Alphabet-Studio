@@ -1,4 +1,4 @@
-# General
+# Alphabet Studio
 
 [Visit site](http://alphabetstudio.hoakusa.com) or [Codepen](https://codepen.io/hoakusa/full/ZKRzZX/).
 
